@@ -1,6 +1,7 @@
 package com.dvirlin.testmod;
 
 import com.dvirlin.testmod.handler.ConfigurationHandler;
+import com.dvirlin.testmod.init.ModBlocks;
 import com.dvirlin.testmod.init.ModItems;
 import com.dvirlin.testmod.proxy.IProxy;
 import com.dvirlin.testmod.reference.Reference;
@@ -27,6 +28,7 @@ public class TestMod
         FMLCommonHandler.instance().bus().register(new ConfigurationHandler());
 
         ModItems.init();
+        ModBlocks.init();
     }
 
     @Mod.EventHandler

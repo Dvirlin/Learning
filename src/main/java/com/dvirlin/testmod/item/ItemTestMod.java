@@ -1,5 +1,6 @@
 package com.dvirlin.testmod.item;
 
+import com.dvirlin.testmod.creativetab.CreativeTabTestMod;
 import com.dvirlin.testmod.reference.Textures;
 import cpw.mods.fml.relauncher.Side;
 import cpw.mods.fml.relauncher.SideOnly;
@@ -15,6 +16,7 @@ public class ItemTestMod extends Item
     public ItemTestMod()
     {
         super();
+        this.setCreativeTab(CreativeTabTestMod.TestModTab);
     }
 
     @Override

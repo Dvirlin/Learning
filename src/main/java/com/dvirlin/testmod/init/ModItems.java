@@ -2,11 +2,11 @@ package com.dvirlin.testmod.init;
 
 import com.dvirlin.testmod.item.ItemMapleLeaf;
 import com.dvirlin.testmod.item.ItemTestMod;
+import com.dvirlin.testmod.reference.Reference;
 import cpw.mods.fml.common.registry.GameRegistry;
 
-/**
- * Created by Sean on 05/07/2014.
- */
+
+@GameRegistry.ObjectHolder(Reference.MOD_ID)
 public class ModItems
 {
     public static final ItemTestMod mapleLeaf = new ItemMapleLeaf();
